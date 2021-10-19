@@ -18,7 +18,7 @@ module.exports = {
      template: "./src/template.html",
      title: 'Webpack starter',
      hash: true,
-     filename: './template.html',
+     filename: './index.html', //This has to be "index.html" for it to work on npm start on a local server
    }),
   ],
   module: {
@@ -67,5 +67,6 @@ module.exports = {
     },
     compress: true,
     port: 9000,
+    hot: true
   },
 }
